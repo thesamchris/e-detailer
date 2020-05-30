@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essof Detailer</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            overflow: hidden;
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+        }
+
+        .video__container {
+            position: absolute;
+            top: -183px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+
+        video {
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        nav {
+            z-index: 2;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, black, transparent);
+            height: 80px;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 0px;
+            height: 80px;
+            width: 100vw;
+            background: linear-gradient(180deg, transparent, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav><a class="logo" href="/">Essof Detailer</a></nav>
+    <div class="video__container">
+        <video src="./assets/video.mp4" autoplay loop muted></video>
+    </div>
+    <div class="bottom">Coming soon</div>
+</body>
+</html>
