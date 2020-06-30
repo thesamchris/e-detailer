@@ -1,0 +1,41 @@
+a.on-dark svg.exagon .background, button.on-dark svg.exagon .background {
+    fill: transparent;
+    stroke: #fff;
+}
+
+a.on-dark.hover svg.exagon .background, a.on-dark:hover svg.exagon .background, a.on-dark svg.exagon.ar .ar, a.on-dark svg.exagon .foreground text, a.on-dark svg.exagon.telegram .telegram, button.on-dark.hover svg.exagon .background, button.on-dark:hover svg.exagon .background, button.on-dark svg.exagon.ar .ar, button.on-dark svg.exagon .foreground text, button.on-dark svg.exagon.telegram .telegram {
+    fill: #fff;
+}
+
+a.on-dark:hover svg.exagon .foreground, button.on-dark svg.exagon .foreground {
+    stroke: var(--black);
+}
+
+.cta-right {
+    width: 60px;
+    height: auto;
+    margin-top: 28px;
+    display: inline-block;
+}
+
+svg.exagon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+svg.exagon .background {
+    transition: fill .3s ease-out;
+    fill: transparent;
+    stroke: #181818;
+}
+
+a.on-dark svg.exagon .foreground, button.on-dark svg.exagon .foreground {
+    stroke: #fff;
+}
+
+svg.exagon .foreground {
+    transition: stroke .3s ease-out;
+    stroke: #181818;
+    fill: none;
+}

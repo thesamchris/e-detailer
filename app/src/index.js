@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import Hero from './components/shell/hero';
 
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path="/">
         <App>
-          content
+          <Hero />
         </App>
       
       </Route>
