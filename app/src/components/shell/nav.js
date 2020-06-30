@@ -7,7 +7,7 @@ class Nav extends React.Component {
         return (
 					<header>
 						<nav>
-							<Link className="desktop_nav__logo">
+							<Link className="desktop_nav__logo" to="/">
 								essof
 							</Link>
 							<span className="desktop_nav__grow"></span>

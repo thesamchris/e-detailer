@@ -1,0 +1,21 @@
+.partners__container {
+    padding: 70px 0;
+    /* margin-left: 155px; */
+    text-align: center;
+}
+
+.partners__title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.partners__sonax {
+    width: 200px;
+    height: 100px;
+    background: url('https://cdn.worldvectorlogo.com/logos/sonax-1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+} 

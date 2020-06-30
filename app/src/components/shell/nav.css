@@ -4,6 +4,7 @@ nav {
     height: 94px;
     display: flex;
     align-items: center;
+    padding: 0 40px;
 }
 
 .desktop_nav__link {

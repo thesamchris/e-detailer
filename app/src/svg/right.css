@@ -12,7 +12,6 @@ a.on-dark:hover svg.exagon .foreground, button.on-dark svg.exagon .foreground {
 }
 
 .cta-right {
-    width: 60px;
     height: auto;
     margin-top: 28px;
     display: inline-block;
