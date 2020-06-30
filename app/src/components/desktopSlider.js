@@ -11,15 +11,15 @@ const DesktopSlide = ({ active = false, index, img }) => (
     </div>
 )
 
-const DesktopInactiveSlide = () => (
-    <div className="slide" data-index="1">
-        <div className="skew">
-            <div className="skew-fix">
-                <img data-srcset="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/Aventador_SVJ_Verde_Compositing_4terzi_00.jpg" alt="Lamborghini Aventador SVJ" className="img-loaded" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/Aventador_SVJ_Verde_Compositing_4terzi_00.jpg" />
-            </div>
-        </div>
-    </div>
-)
+// const DesktopInactiveSlide = () => (
+//     <div className="slide" data-index="1">
+//         <div className="skew">
+//             <div className="skew-fix">
+//                 <img data-srcset="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/Aventador_SVJ_Verde_Compositing_4terzi_00.jpg" alt="Lamborghini Aventador SVJ" className="img-loaded" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/Aventador_SVJ_Verde_Compositing_4terzi_00.jpg" />
+//             </div>
+//         </div>
+//     </div>
+// )
 
 const SliderText = ({ title = 'title', subtitle = 'subtitle' }) => (
 	<div className="slide-texts inner-wrapper col-5 offset-1">
