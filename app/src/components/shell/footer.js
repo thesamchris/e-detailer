@@ -27,13 +27,13 @@ const Footer = () => (
 				className="footer__social_media"
 				to="https://www.instagram.com/sonaxbrunei/"
 			>
-				<i class="fab fa-instagram"></i>
+				<i className="fab fa-instagram"></i>
 			</Link>
 			<Link
 				className="footer__social_media"
 				to="https://www.facebook.com/sonaxbwn/"
 			>
-				<i class="fab fa-facebook-f"></i>
+				<i className="fab fa-facebook-f"></i>
 			</Link>
 		</div>
 	</footer>
