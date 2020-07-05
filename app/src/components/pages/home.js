@@ -5,10 +5,11 @@ import Work from '../shell/sectionWithImage'
 import Partners from '../partners'
 import DesktopSlider from '../desktopSlider'
 import video from '../../assets/video.mp4'
+import thumb from '../../assets/thumb.jpg'
 
 const HomePage = () => (
 	<App>
-		<Hero title="Car Wash" subtitle="Head-turning shine guarenteed" video={video} />
+		<Hero title="Car Wash" subtitle="Head-turning shine guarenteed" video={video} background={thumb}/>
 		<DesktopSlider />
 		<Work
 			link="/work"
