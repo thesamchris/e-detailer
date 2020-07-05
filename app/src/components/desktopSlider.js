@@ -21,12 +21,27 @@ const DesktopSlide = ({ active = false, index, img }) => (
 //     </div>
 // )
 
-const SliderText = ({ title = 'title', subtitle = 'subtitle' }) => (
+let sliderContent = {
+	0: {
+		title: 'interiors',
+		subtitle: 'beauty comes from the inside'
+	},
+	1: {
+		title: 'polish',
+		subtitle: 'look like new'
+	},
+	2: {
+		title: 'wax',
+		subtitle: 'clean.'
+	}
+}
+
+const SliderText = ({ title = 'title', subtitle = 'subtitle', onNextClick, onPrevClick, activeSlide }) => (
 	<div className="slide-texts inner-wrapper col-5 offset-1">
 		<div className="controls">
 			<div className="control-title text-uppercase">our services</div>
 			<div className="ctrl-buttonset">
-				<button type="button" className="on-dark btn-prev prev">
+				<button type="button" className="on-dark btn-prev prev" onClick={onPrevClick}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 50.464 58.271"
@@ -46,7 +61,7 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle' }) => (
 						</g>
 					</svg>
 				</button>
-				<button type="button" className="on-dark btn-next next">
+				<button type="button" className="on-dark btn-next next" onClick={onNextClick}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 50.464 58.271"
@@ -72,11 +87,11 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle' }) => (
 			<div className="animated-text">
 				<h2 className="service-name" data-name={title}>
 					<div style={{ position: 'relative', display: 'inline-block' }}>
-                        { title }
+                        { sliderContent[activeSlide].title }
 					</div>
 				</h2>
 				<h3 className="service-payoff" style={{}}>
-					{ subtitle }
+					{ sliderContent[activeSlide].subtitle }
 				</h3>
 			</div>
 			<div className="service-controls ctrl-buttonset">
@@ -113,29 +128,73 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle' }) => (
 	</div>
 )
 
-const DesktopSlider = () => (
-	<div className="desktop-slider-container">
-		<SliderText />
-		<div className="slider">
-			<div className="slides">
-				<DesktopSlide
-					active={false}
-					img="https://images.unsplash.com/photo-1565689876404-edf59093ce9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-					index="1"
+class DesktopSlider extends React.Component {
+	constructor() {
+		super()
+
+		this.state = {
+			activeSlide: 0,
+			next: 1,
+			last: 2
+		}
+
+		this.onNextClick = this.onNextClick.bind(this)
+		this.onPrevClick = this.onPrevClick.bind(this)
+	}
+
+	onNextClick() {
+		let { activeSlide, next, last } = this.state
+		this.setState({
+			activeSlide: next,
+			next: last,
+			last: activeSlide
+		})
+	}
+
+	onPrevClick() {
+		let { activeSlide, next, last } = this.state
+		this.setState({
+			activeSlide: last,
+			next: activeSlide,
+			last: next
+		})
+	}
+
+	render() {
+		let { activeSlide, next, last } = this.state
+
+		let imgs = {
+			0: 'https://images.unsplash.com/photo-1526518604528-b927bd350668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+			1: 'https://images.unsplash.com/photo-1571348500628-1e9b6aa00dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+			2: 'https://images.unsplash.com/photo-1565689876404-edf59093ce9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+		}
+
+		return (
+			<div className="desktop-slider-container">
+				<SliderText
+					onNextClick={this.onNextClick}
+					onPrevClick={this.onPrevClick}
+					activeSlide={activeSlide}
+					next={next}
+					last={last}
 				/>
-				<DesktopSlide
-					active={false}
-					img="https://images.unsplash.com/photo-1571348500628-1e9b6aa00dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-					index="2"
-				/>
-				<DesktopSlide
-					active={true}
-					img="https://images.unsplash.com/photo-1526518604528-b927bd350668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-					index="0"
-				/>
+				<div className="slider">
+					<div className="slides">
+						<DesktopSlide active={false} img={imgs[last]} index={last} />
+						<DesktopSlide active={false} img={imgs[next]} index={next} />
+						<DesktopSlide
+							active={true}
+							img={imgs[activeSlide]}
+							index={activeSlide}
+						/>
+					</div>
+					activeSlide: {activeSlide}
+					next: {next}
+					last: {last}
+				</div>
 			</div>
-		</div>
-	</div>
-)
+		)
+	}
+} 
 
 export default DesktopSlider

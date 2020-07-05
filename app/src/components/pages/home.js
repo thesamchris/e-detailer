@@ -8,7 +8,7 @@ import video from '../../assets/video.mp4'
 
 const HomePage = () => (
 	<App>
-		<Hero video={video} />
+		<Hero title="Car Wash" subtitle="Head-turning shine guarenteed" video={video} />
 		<DesktopSlider />
 		<Work
 			link="/work"
