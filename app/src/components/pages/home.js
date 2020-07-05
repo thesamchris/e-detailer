@@ -9,7 +9,7 @@ import thumb from '../../assets/thumb.jpg'
 
 const HomePage = () => (
 	<App>
-		<Hero title="Car Wash" subtitle="Head-turning shine guarenteed" video={video} background={thumb}/>
+		<Hero title="Car Wash" subtitle="Head-turning shine guaranteed" video={video} background={thumb}/>
 		<DesktopSlider />
 		<Work
 			link="/work"
