@@ -1,10 +1,13 @@
 import React from 'react'
 import Right from '../../svg/right'
+import Video from '../video'
 import './hero.css'
+
 const Hero = ({
 	subtitle = 'Subtitle',
 	title = 'title',
 	background = 'https://images.unsplash.com/photo-1550564956-8f914edc0477?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+	video = '',
 }) => (
 	<div className="hero__container">
 		<section className="hero__section">
@@ -18,12 +21,19 @@ const Hero = ({
 						backgroundPosition: `center center`,
 					}}
 				></div>
+				{video ? (
+					<div className="hero__bg_video">
+						<Video video={video} />
+					</div>
+				) : (
+					''
+				)}
 			</div>
-            <div className="hero__content">
-                <h4 className="hero__subtitle">{subtitle}</h4>
-                <h1 className="hero__title">{title}</h1>
-                <Right link="/appointment"/>
-            </div>
+			<div className="hero__content">
+				<h4 className="hero__subtitle">{subtitle}</h4>
+				<h1 className="hero__title">{title}</h1>
+				<Right link="/appointment" />
+			</div>
 		</section>
 	</div>
 )

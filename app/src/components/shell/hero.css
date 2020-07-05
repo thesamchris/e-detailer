@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero__container {
@@ -24,6 +25,7 @@
     height: 100%;
     position: absolute;
     background: linear-gradient(90deg, #000000a6, transparent);
+    z-index: 3;
 }
 
 .hero__bg_img {
@@ -33,7 +35,7 @@
 
 .hero__content {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     margin: 0 0 0 155px;
 }
 
@@ -45,4 +47,11 @@
 .hero__title {
     font-size: 150px;
     margin: 0;
+}
+
+.hero__bg_video {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: -210px;
 }

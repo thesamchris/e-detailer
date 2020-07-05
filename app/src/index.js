@@ -4,25 +4,14 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
-import Hero from './components/shell/hero'
-import Work from './components/shell/sectionWithImage'
-import Partners from './components/partners'
-import DesktopSlider from './components/desktopSlider'
 import CompanyPageFold from './components/companyPageFold'
+import HomePage from './components/pages/home'
 
 ReactDOM.render(
 	<Router>
 		<Switch>
 			<Route path="/">
-				<App>
-					<Hero />
-          <DesktopSlider />
-					<Work
-						link="/work"
-						background="https://images.unsplash.com/photo-1587350855729-bab6beeac1ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-					/>
-          <Partners />
-				</App>
+				<HomePage />
 			</Route>
       <Route path="/company">
         <App>
