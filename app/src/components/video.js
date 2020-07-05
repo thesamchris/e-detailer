@@ -18,6 +18,7 @@ const Video = ({ video }) => {
 				autoPlay
 				playsInline
 				muted
+				loop
 				src={video}
 				onLoadedData={onLoadedData}
 				style={{ opacity: isVideoLoaded ? 1 : 0 }}
