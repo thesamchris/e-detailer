@@ -3,10 +3,30 @@ import { Link } from 'react-router-dom'
 import './nav.css'
 
 class Nav extends React.Component {
+	constructor() {
+		super()
+
+		this.state = {
+			navOpen: false
+		}
+
+		this.onToggleMobileNav = this.onToggleMobileNav.bind(this)
+	}
+
+	onToggleMobileNav() {
+		let { navOpen } = this.state
+		this.setState({
+			navOpen: !navOpen
+		})
+	}
+
     render() {
+
+		let { navOpen } = this.state
+
         return (
 					<header>
-						<nav>
+						<nav className="desktop_nav__container">
 							<Link className="desktop_nav__logo" to="/">
 								essof
 							</Link>
@@ -26,6 +46,46 @@ class Nav extends React.Component {
 									Appointment
 								</Link>
 							</span>
+						</nav>
+						<nav className="mobile_nav__container">
+							<div className="mobile_nav__visual">
+								<Link className="desktop_nav__logo" to="/">
+									essof
+								</Link>
+								<div className="mobile_nav__grow"></div>
+								<div
+									aria-expanded={navOpen}
+									onClick={this.onToggleMobileNav}
+									className="mobile_nav__hamburger"
+								>
+									<div></div>
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+							<div
+								className={
+									navOpen
+										? 'mobile_nav__links_container open'
+										: 'mobile_nav__links_container'
+								}
+							>
+								<ul>
+									<li>
+										<Link to="/promotion">promotions</Link>
+									</li>
+									<li>
+										<Link to="/about-us">about us</Link>
+									</li>
+									<li>
+										<Link>services</Link>
+									</li>
+									<li>
+										<Link>products</Link>
+									</li>
+									
+								</ul>
+							</div>
 						</nav>
 					</header>
 				)
