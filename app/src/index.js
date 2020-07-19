@@ -6,19 +6,23 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
 import CompanyPageFold from './components/companyPageFold'
 import HomePage from './components/pages/home'
+import LeftImageSection from './components/pages/leftImageSection'
 
 ReactDOM.render(
 	<Router>
 		<Switch>
 			<Route path="/">
-				<HomePage />
+				{/* <HomePage /> */}
+				<LeftImageSection />
 			</Route>
-      <Route path="/company">
-        <App>
-          hi
-          <CompanyPageFold />
-        </App>
-      </Route>
+			<Route path="/page">
+			</Route>
+			<Route path="/company">
+				<App>
+				hi
+				<CompanyPageFold />
+				</App>
+			</Route>
 		</Switch>
 	</Router>,
 	document.getElementById('root')

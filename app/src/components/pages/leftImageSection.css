@@ -1,0 +1,208 @@
+.left_image_section__desktop_decoration {
+    position: absolute;
+    /* top: 0; */
+    top: 50px;
+    left: 20%;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-content: center;
+}
+
+.left_image_section__desktop_decoration > svg {
+    fill: #f8f8f7;
+}
+
+.skew {
+    position: relative;
+    transform: skew(-35deg);
+    transform-origin: bottom left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f8f7;
+}
+
+.ie {
+    display: none!important;
+}
+
+.left_image_section__desktop_content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: inherit;
+    /* height: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px; */
+}
+
+/* .left_image_section__images {
+    height: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    /* position: relative;
+    min-height: 650px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px; 
+} */
+
+.left_image_section__image {
+    position: relative;
+    min-height: 650px;
+    flex: 0 0 58%;
+    max-width: 66.66667%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; */
+}
+
+.left_image_section__image_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; */
+}
+
+/* .left_image_section__img_container {
+    transform: skew(-35deg);
+    transform-origin: center center;
+    overflow: hidden;
+    right: 209.25px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    will-change: auto;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* .left_image_section__desktop_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    align-items: stretch!important;
+    height: 100%!important;
+} */
+
+.left_image_section__images {
+    height: 100%!important;
+    align-items: stretch!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+    /* width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+    position: relative;
+    min-height: 650px; */
+}
+
+.left_image_section__img_container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: -1px;
+    width: 458.5px;
+    height: calc(100% + 2px);
+    background-color: #fff;
+    transform-origin: center center;
+    right: 0;
+    transform: translateX(50%) skew(-35deg);
+    background-color: #f8f8f7!important;
+}
+
+.left_image_section__img_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.left_image_section__slider {
+    z-index: 2!important;
+    transform: skew(-35deg);
+    transform-origin: center center;
+    overflow: hidden;
+    right: 209.25px;
+    position: absolute;
+    top: 0;
+    will-change: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.left_image_section__img {
+    transform: translateX(-209.25px) skew(35deg);
+    transform-origin: center center;
+    width: calc(100% + 458.5px);
+    position: absolute;
+    left: -22px;
+    height: 100%;
+    background-color: #f8f8f7;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.left_image_section__section {
+    margin-bottom: -60px;
+}
+
+.left_image_section__text {
+    position: relative;
+    z-index: 30;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.left_image_section__text_rows {
+    height: 100%!important;
+    align-items: center!important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.left_image_section__text_col {
+    height: fit-content;
+    margin-left: 8.33333%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.left_image_section__text_wrapper {
+    position: relative;
+    text-align: left;
+}

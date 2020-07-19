@@ -78,10 +78,10 @@ class Nav extends React.Component {
 										<Link to="/about-us">about us</Link>
 									</li>
 									<li>
-										<Link>services</Link>
+										<Link to="/">services</Link>
 									</li>
 									<li>
-										<Link>products</Link>
+										<Link to="/">products</Link>
 									</li>
 									
 								</ul>
