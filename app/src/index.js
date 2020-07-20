@@ -11,16 +11,14 @@ import LeftImageSection from './components/pages/leftImageSection'
 ReactDOM.render(
 	<Router>
 		<Switch>
-			<Route path="/">
-				{/* <HomePage /> */}
-				<LeftImageSection />
-			</Route>
-			<Route path="/page">
+			<Route exact path="/">
+				<HomePage />
+				{/* <LeftImageSection /> */}
 			</Route>
 			<Route path="/company">
 				<App>
-				hi
-				<CompanyPageFold />
+					hi
+					<CompanyPageFold />
 				</App>
 			</Route>
 		</Switch>
