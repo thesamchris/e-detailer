@@ -195,6 +195,12 @@ a.hover svg.exagon .background, a:hover svg.exagon .background, button.hover svg
     display: flex;
     align-items: center;
     min-width: 16rem;
+    height: 45px;
+    text-decoration: none;
+}
+
+.explore-models svg.exagon {
+    width: auto;
 }
 
 .service-controls .button-wrapper span {

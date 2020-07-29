@@ -1,5 +1,6 @@
 import React from 'react'
 import './desktopSlider.css'
+import { Link } from 'react-router-dom'
 
 const DesktopSlide = ({ active = false, index, img }) => (
     <div className={active ? "slide active" : "slide"} data-index={index}>
@@ -95,10 +96,11 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle', onNextClick, onPre
 				</h3>
 			</div>
 			<div className="service-controls ctrl-buttonset">
-                <button
+                <Link
 					type="button"
 					className="on-dark btn-explore explore-models button-wrapper"
 					data-layer="showModels,Models Slider,Show"
+					to="/services"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +124,7 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle', onNextClick, onPre
 						<br />
 						services
 					</span>
-				</button>
+				</Link>
 			</div>
 		</div>
 	</div>
@@ -188,9 +190,6 @@ class DesktopSlider extends React.Component {
 							index={activeSlide}
 						/>
 					</div>
-					activeSlide: {activeSlide}
-					next: {next}
-					last: {last}
 				</div>
 			</div>
 		)

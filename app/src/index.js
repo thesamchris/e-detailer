@@ -8,6 +8,7 @@ import CompanyPageFold from './components/companyPageFold'
 import HomePage from './components/pages/home'
 import LeftImageSection from './components/pages/leftImageSection'
 import WorkPage from './components/pages/work';
+import ServicesPage from './components/pages/services';
 
 ReactDOM.render(
 	<Router>
@@ -25,6 +26,11 @@ ReactDOM.render(
 			<Route path="/work">
 				<App>
 					<WorkPage />
+				</App>
+			</Route>
+			<Route path="/services">
+				<App>
+					<ServicesPage />
 				</App>
 			</Route>
 		</Switch>

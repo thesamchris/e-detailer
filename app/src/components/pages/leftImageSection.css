@@ -169,6 +169,7 @@
 
 .left_image_section__section {
     position: relative;
+    overflow: hidden;
 }
 
 .left_image_section__text {
@@ -220,4 +221,11 @@
     background: url(../../assets/testimonial_three.jpg);
     height: 100%;
     background-position: bottom;
+}
+
+.services_cta {
+    background: url(../../assets/shelf.jpg);
+    height: 100%;
+    background-position: 85%;
+    background-size: contain;
 }
