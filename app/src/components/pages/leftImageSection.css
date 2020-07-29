@@ -1,7 +1,6 @@
 .left_image_section__desktop_decoration {
     position: absolute;
-    /* top: 0; */
-    top: 50px;
+    top: 0;
     left: 20%;
     height: 100%;
     width: auto;
@@ -169,7 +168,7 @@
 }
 
 .left_image_section__section {
-    margin-bottom: -60px;
+    position: relative;
 }
 
 .left_image_section__text {
@@ -205,4 +204,20 @@
 .left_image_section__text_wrapper {
     position: relative;
     text-align: left;
+}
+
+.testimonial_one {
+    background: url(../../assets/testimonial_one.jpg) 50% center / cover rgb(248, 248, 247);
+    height: 100%;
+}
+
+.testimonial_two {
+    background: url(../../assets/testimonial_two.jpg) 50% center / cover rgb(248, 248, 247);
+    height: 100%;
+}
+
+.testimonial_three {
+    background: url(../../assets/testimonial_three.jpg);
+    height: 100%;
+    background-position: bottom;
 }

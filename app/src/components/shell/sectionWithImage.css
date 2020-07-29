@@ -36,7 +36,7 @@
 .section_with_image__content {
     position: absolute;
     z-index: 2;
-    margin: 0 0 0 155px;
+    margin: 0 0 0 80px;
 }
 
 .section_with_image__subtitle {

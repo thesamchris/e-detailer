@@ -5,6 +5,7 @@ const LeftImageSection = ({
 	img = 'https://images.unsplash.com/photo-1587350811536-a8b462a5c081?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
 	title = 'Headline',
 	p = 'text here',
+	imgClass 
 }) => (
 	<div>
 		<section className="left_image_section__section">
@@ -32,7 +33,7 @@ const LeftImageSection = ({
 						<div className="left_image_section__image_wrapper">
 							<div className="left_image_section__img_container">
 								<div className="left_image_section__slider">
-									<div
+									{/* <div
 										className="left_image_section__img"
 										style={{
 											background: `url(${img})`,
@@ -41,6 +42,9 @@ const LeftImageSection = ({
 											backgroundPosition: '50%',
 											backgroundSize: 'cover',
 										}}
+									></div> */}
+									<div
+										className={`left_image_section__img ${imgClass}`}
 									></div>
 								</div>
 							</div>
