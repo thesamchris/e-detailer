@@ -8,6 +8,9 @@ const Hero = ({
 	title = 'title',
 	background = 'https://images.unsplash.com/photo-1550564956-8f914edc0477?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
 	video = '',
+	showLink = true,
+	showContent = true,
+	secondaryTitle = 'Secondary title',
 }) => (
 	<div className="hero__container">
 		<section className="hero__section">
@@ -29,12 +32,21 @@ const Hero = ({
 					''
 				)}
 			</div>
-			<div className="hero__content">
-				<h4 className="hero__subtitle">{subtitle}</h4>
-				<h1 className="hero__title">{title}</h1>
-				<Right link="/appointment" />
-			</div>
+			{showContent ? (
+				<div className="hero__content">
+					<h4 className="hero__subtitle">{subtitle}</h4>
+					<h1 className="hero__title">{title}</h1>
+					{showLink ? <Right link="/appointment" width={'40px'} /> : ''}
+				</div>
+			) : (
+				''
+			)}
 		</section>
+		{secondaryTitle ? (
+			<div className="hero__secondary_title">{secondaryTitle}</div>
+		) : (
+			''
+		)}
 	</div>
 )
 

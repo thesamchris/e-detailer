@@ -11,7 +11,7 @@ import FeaturedProduct from '../featuredProduct'
 
 const HomePage = () => (
 	<App>
-		<Hero title="Car Wash" subtitle="Head-turning shine guaranteed" video={video} background={thumb}/>
+		<Hero title="Car Wash" subtitle="Head-turning shine guaranteed" video={video} background={thumb} secondaryTitle={'Featured Product'} showLink={false} showContent={false}/>
 		<FeaturedProduct />
 		<DesktopSlider />
 		<MobileSlider />
