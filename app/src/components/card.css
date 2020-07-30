@@ -54,3 +54,21 @@ a.card__learn {
     background: url(../assets/services_polish.jpg);
     background-size: cover;
 }
+
+.press_one {
+    background: url(../assets/press_one.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.press_two {
+    background: url(../assets/press_two.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.press_three {
+    background: url(../assets/press_three.jpg);
+    background-size: cover;
+    background-position: center;
+}

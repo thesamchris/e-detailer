@@ -1,0 +1,55 @@
+.about_us__content {
+    width: 90vw;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.about_us__list_item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about_us__list_item_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkred;
+    width: 210px;
+}
+
+h1.about_us__partners {
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.about_us__sonax_logo {
+    width: 165px;
+    height: 100px;
+    background: url('https://cdn.worldvectorlogo.com/logos/sonax-1.svg');
+    background-size: contain;
+    background-position: -24px center;
+    background-repeat: no-repeat;
+    margin-right: calc(210px - 165px);
+}
+
+.about_us__maxshine_logo {
+    width: 165px;
+    height: 100px;
+    background: url(../../assets/maxshine_logo.png);
+    background-size: 100%;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    margin-right: calc(210px - 165px);
+}
+
+p.about_us__list_item_point {
+    font-weight: bold;
+    color: darkred;
+}
+
+p.about_us__list_item_p {
+    margin-top: 0;
+}
+
+.about_us__cards_container {
+    display: flex;
+}

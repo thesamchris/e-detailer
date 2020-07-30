@@ -7,8 +7,9 @@ import * as serviceWorker from './serviceWorker'
 import CompanyPageFold from './components/companyPageFold'
 import HomePage from './components/pages/home'
 import LeftImageSection from './components/pages/leftImageSection'
-import WorkPage from './components/pages/work';
-import ServicesPage from './components/pages/services';
+import WorkPage from './components/pages/work'
+import ServicesPage from './components/pages/services'
+import AboutPage from './components/pages/about'
 
 ReactDOM.render(
 	<Router>
@@ -17,10 +18,10 @@ ReactDOM.render(
 				<HomePage />
 				{/* <LeftImageSection /> */}
 			</Route>
-			<Route path="/company">
+			<Route path="/about">
 				<App>
-					hi
-					<CompanyPageFold />
+					<AboutPage />
+					{/* <CompanyPageFold /> */}
 				</App>
 			</Route>
 			<Route path="/work">

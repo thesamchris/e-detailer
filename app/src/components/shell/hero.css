@@ -66,6 +66,12 @@
     margin-top: -210px;
 }
 
+.about_us__bg {
+    background: url(../../assets/storefront_two_cars_far.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
 @media only screen and (max-width: 375px) {
   .hero__subtitle {
       font-size: 18px;
