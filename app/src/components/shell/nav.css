@@ -44,6 +44,14 @@ nav {
     color: white;
 }
 
+.nav__logo {
+    background: url(../../assets/logo.png);
+    width: 100px;
+    height: 100px;
+    background-position: 55%;
+    background-size: 200%;
+}
+
 .mobile_nav__hamburger > div {
     position: relative;
     background-color: hsla(0,0%,100%,.8);

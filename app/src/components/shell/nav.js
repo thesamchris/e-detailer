@@ -28,7 +28,7 @@ class Nav extends React.Component {
 					<header>
 						<nav className="desktop_nav__container">
 							<Link className="desktop_nav__logo" to="/">
-								essof
+								<div className="nav__logo"></div>
 							</Link>
 							<span className="desktop_nav__grow"></span>
 							<span className="desktop_nav__link_container">
@@ -50,7 +50,7 @@ class Nav extends React.Component {
 						<nav className="mobile_nav__container">
 							<div className="mobile_nav__visual">
 								<Link className="desktop_nav__logo" to="/">
-									essof
+									<div className="nav__logo"></div>
 								</Link>
 								<div className="mobile_nav__grow"></div>
 								<div
@@ -83,7 +83,6 @@ class Nav extends React.Component {
 									<li>
 										<Link to="/">products</Link>
 									</li>
-									
 								</ul>
 							</div>
 						</nav>
