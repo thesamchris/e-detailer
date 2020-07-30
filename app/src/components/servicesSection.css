@@ -1,0 +1,43 @@
+.services_section__background {
+    background: url(../assets/ferrari_inside_sonax.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    z-index: -2;
+}
+
+.services_section__dimmer {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: -1;
+}
+
+.services_section__content {
+    padding: 25px 0;
+}
+
+h1.services_section__title {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.services_section__cards_container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.services_section__content .desktop_nav__link_container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.services_section {
+    position: relative;
+}

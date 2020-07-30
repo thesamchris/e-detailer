@@ -8,12 +8,14 @@ import MobileSlider from '../mobileSlider'
 import video from '../../assets/video.mp4'
 import thumb from '../../assets/thumb.jpg'
 import FeaturedProduct from '../featuredProduct'
+import ServicesSection from '../servicesSection'
 
 const HomePage = () => (
 	<App>
 		<Hero title="Car Wash" subtitle="Head-turning shine guaranteed" video={video} background={thumb} secondaryTitle={'Featured Product'} showLink={false} showContent={false}/>
 		<FeaturedProduct />
-		<DesktopSlider />
+		<ServicesSection />
+		{/* <DesktopSlider /> */}
 		<MobileSlider />
 		<Work
 			subtitle="Let the cars speak"
