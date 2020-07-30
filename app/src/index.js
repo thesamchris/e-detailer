@@ -4,12 +4,13 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker'
-import CompanyPageFold from './components/companyPageFold'
+// import CompanyPageFold from './components/companyPageFold'
 import HomePage from './components/pages/home'
-import LeftImageSection from './components/pages/leftImageSection'
+// import LeftImageSection from './components/pages/leftImageSection'
 import WorkPage from './components/pages/work'
 import ServicesPage from './components/pages/services'
 import AboutPage from './components/pages/about'
+import SonaxPage from './components/pages/sonax'
 
 ReactDOM.render(
 	<Router>
@@ -32,6 +33,11 @@ ReactDOM.render(
 			<Route path="/services">
 				<App>
 					<ServicesPage />
+				</App>
+			</Route>
+			<Route path="/sonax">
+				<App>
+					<SonaxPage />
 				</App>
 			</Route>
 		</Switch>

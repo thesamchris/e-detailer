@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './right.css'
 const Right = ({ link, width = '60px' }) => (
 	<div>

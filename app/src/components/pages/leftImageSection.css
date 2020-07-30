@@ -229,3 +229,11 @@
     background-position: 85%;
     background-size: contain;
 }
+
+.sonax_page__best_brand_img {
+    background: url(../../assets/sonax_ranking.jpg) white;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

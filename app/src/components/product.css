@@ -1,0 +1,155 @@
+.product__container {
+    width: 250px;
+    height: 480px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.product__image.sonax_product {
+    width: 100%;
+    height: 200px;
+}
+
+.product__title {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: darkred;
+    margin: 10px 0;
+}
+
+.product__pricings {
+    background: darkred;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.product__prices {
+    display: flex;
+    padding: 10px;
+}
+
+.product__price_grow {
+    flex-grow: 1;
+}
+
+.product__image {
+    width: 100%;
+    height: 80px;
+}
+
+.gloss_shampoo {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/03143000-sonax-glanzshampoo-1l/4732495-1-ger-DE/03143000-SONAX-GlanzShampoo-1l.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.rich_foam_shampoo {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/02483000-sonax-xtreme-rich-foam-shampoo/5299437-1-ger-DE/02483000-SONAX-XTREME-Rich-Foam-Shampoo.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.wash_wax {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/catalog/packshots/313341/643776-5-ger-DE/313341.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.bril_wax_1 {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/02011000-sonax-xtreme-brilliantwax1-250ml/5304889-4-ger-DE/02011000-SONAX-Xtreme-brilliantwax1-250ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.polish_wax_2 {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/catalog/packshots/02071000-sonax-xtreme-polishwax2-250ml2/4732511-3-ger-DE/02071000-SONAX-XTREME-PolishWax2-250ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.high_speed_wax {
+    background: url('https://www.carpartsbuddy.sg/wp-content/uploads/2019/08/02882000.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.bril_shine {
+    background: url('https://www.eadetailer.com/wp-content/uploads/2020/07/sonax-xtreme-brilliant-shine-detailer.jpg');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.spray_seal {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/catalog/packshots/02434000-sonax-xtreme-spray-seal-750ml/5172043-1-ger-DE/02434000-SONAX-XTREME-Spray-Seal-750ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.int_detailer {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/catalog/packshots/02204000-sonax-xtreme-interiordetailer-750ml/5259019-1-ger-DE/02204000-SONAX-XTREME-InteriorDetailer-750ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.cockpit_cleaner {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_1180_padded_portrait/media/catalog/packshots/02832000/5415-15-ger-DE/02832000.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.care_foam {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_1180_padded_portrait/media/catalog/packshots/289100/1349768-14-eng-GB/289100.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.car_breeze {
+    background: url('https://www.carpartsbuddy.sg/wp-content/uploads/2019/09/292241.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.car_ac {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/images/03239410-sonax-klimapowercleaner-airaid-thekendisplay-gemischt-front/5386441-1-ger-DE/03239410-SONAX-KlimaPowerCleaner-AirAid-Thekendisplay-gemischt-front.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.glass_clear {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/catalog/packshots/02382410/5307-15-ger-DE/02382410.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.clearview {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/271141/1349783-9-eng-GB/271141.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.rim_cleaner {
+    background: url('https://www.sonaxcanada.com/wp-content/uploads/product_images/230200-740_Wheel_Cleaner_500ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.tyre_gloss_gel {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_1180_padded_portrait/media/catalog/packshots/02352410-sonax-xtreme-reifenglanzgel_500ml/5259023-3-ger-DE/02352410-SONAX-XTREME-ReifenGlanzGel_500ml.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.sonax_foam_sprayer {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/lightbox/media/images/04965410-foamsprayer/5263400-1-ger-DE/04965410-FoamSprayer.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.clay_ball {
+    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/04197000-sonax-clay-ball.png/5259337-3-ger-DE/04197000-SONAX-Clay-Ball.png.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}

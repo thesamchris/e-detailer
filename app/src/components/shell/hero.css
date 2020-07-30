@@ -72,6 +72,12 @@
     background-position: center bottom;
 }
 
+.sonax__bg {
+    background: url(../../assets/sonax_header.webp);
+    background-size: cover;
+    background-position: top center;
+}
+
 @media only screen and (max-width: 375px) {
   .hero__subtitle {
       font-size: 18px;
