@@ -1,8 +1,40 @@
 footer {
     background: var(--black);
     display: flex;
-    padding: 50px 40px 110px 40px;
-    justify-content: space-between;
+    padding: 50px 40px 225px 40px;
+    flex-direction: column;
+}
+
+.footer__logo {
+    background: url(../../assets/logo.png);
+    width: 200px;
+    height: 57px;
+    background-size: 140%;
+    background-position: 50%;
+}
+
+.footer__links_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+h3.footer__links_title {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footer__links_container span.desktop_nav__link_container {
+    margin-bottom: 10px;
+}
+
+.footer__grow {
+    flex-grow: 1;
+}
+
+.footer__row {
+    display: flex;
 }
 
 .footer__links {
@@ -12,6 +44,7 @@ footer {
 .footer__address {
     color: white;
     line-height: 1.5em;
+    margin: 50px 0 0 45px;
 }
 
 .footer__social_media {
