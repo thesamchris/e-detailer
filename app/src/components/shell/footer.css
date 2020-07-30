@@ -1,7 +1,7 @@
 footer {
     background: var(--black);
     display: flex;
-    padding: 50px 40px 225px 40px;
+    padding: 50px 40px 150px 40px;
     flex-direction: column;
 }
 

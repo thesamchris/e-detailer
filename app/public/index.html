@@ -28,17 +28,9 @@
     <title>React App</title>
     <style>
       .appointment_button {
-        position: fixed;
-        bottom: 0;
-        right: 0;
         text-decoration: none;
         color: white;
         padding: 10px;
-        font-size: 21px;
-        transition: transform ease-in-out 100ms;
-        transform-origin: center;
-        z-index: 99;
-        width: 100%;
       }
 
       .appointment_button_img {
@@ -48,10 +40,23 @@
         background-size: contain;
         background-repeat: no-repeat;
         margin: 0 auto;
+        background-position: -36px -35px;
+        /* transition: transform ease-in-out 100ms;
+        transform-origin: center; */
       }
 
-      .appointment_button:hover {
+      /* .appointment_button:hover {
         transform: scale(1.2);
+      } */
+
+      .appointment_button__container {
+        position: fixed;
+        z-index: 99;
+        bottom: 10px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
@@ -60,10 +65,12 @@
     <div id="root"></div>
     <script defer id="setmore_script" type="text/javascript"
       src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
-      <a id="Setmore_button_iframe"
-      class="appointment_button" href="https://my.setmore.com/bookingpage/e0849b87-2855-4ae0-bd33-86b112b10e99">
-        <div class="appointment_button_img"></div>
-      </a>
+      <div class="appointment_button__container">
+        <a id="Setmore_button_iframe"
+        class="appointment_button" href="https://my.setmore.com/bookingpage/e0849b87-2855-4ae0-bd33-86b112b10e99">
+          <div class="appointment_button_img"></div>
+        </a>
+      </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
