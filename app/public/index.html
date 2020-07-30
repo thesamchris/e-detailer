@@ -29,16 +29,25 @@
     <style>
       .appointment_button {
         position: fixed;
+        bottom: 0;
         right: 0;
-        bottom: 20px;
         text-decoration: none;
-        background: darkred;
         color: white;
         padding: 10px;
         font-size: 21px;
         transition: transform ease-in-out 100ms;
-        transform-origin: 100% 50% 0;
+        transform-origin: center;
         z-index: 99;
+        width: 100%;
+      }
+
+      .appointment_button_img {
+        width: 312px;
+        height: 210px;
+        background: url(./appointment_button.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
       }
 
       .appointment_button:hover {
@@ -52,7 +61,9 @@
     <script defer id="setmore_script" type="text/javascript"
       src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>
       <a id="Setmore_button_iframe"
-      class="appointment_button" href="https://my.setmore.com/bookingpage/e0849b87-2855-4ae0-bd33-86b112b10e99">Book Appointment Now</a>
+      class="appointment_button" href="https://my.setmore.com/bookingpage/e0849b87-2855-4ae0-bd33-86b112b10e99">
+        <div class="appointment_button_img"></div>
+      </a>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
