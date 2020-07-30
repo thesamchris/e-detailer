@@ -7,6 +7,7 @@
 .about_us__list_item {
     display: flex;
     align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .about_us__list_item_title {
@@ -26,7 +27,7 @@ h1.about_us__partners {
     height: 100px;
     background: url('https://cdn.worldvectorlogo.com/logos/sonax-1.svg');
     background-size: contain;
-    background-position: -24px center;
+    background-position: -24px -11px;
     background-repeat: no-repeat;
     margin-right: calc(210px - 165px);
 }
@@ -36,7 +37,7 @@ h1.about_us__partners {
     height: 100px;
     background: url(../../assets/maxshine_logo.png);
     background-size: 100%;
-    background-position: 0px center;
+    background-position: 0px -72px;
     background-repeat: no-repeat;
     margin-right: calc(210px - 165px);
 }
