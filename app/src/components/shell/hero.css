@@ -69,7 +69,7 @@
 .about_us__bg {
     background: url(../../assets/storefront_two_cars_far.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 @media only screen and (max-width: 375px) {
