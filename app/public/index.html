@@ -71,8 +71,8 @@
           <div class="appointment_button_img"></div>
         </a>
       </div>
-      <form action="POST" name="contact_form" netlify netlify-honeypot="bot-field" hidden>
-                <!-- <label for="type"></label> -->
+      <!-- <form action="POST" name="contact_form" netlify netlify-honeypot="bot-field" hidden>
+                <label for="type"></label>
                 <select name="type "id="type">
                     <option>Support</option>
                     <option>Customer Service</option>
@@ -84,7 +84,12 @@
                 <input name="message" type="text" id="message"/>
                 <div data-netlify-recaptcha="true"></div>
                 <button type="submit">send message</button>
-            </form>
+            </form> -->
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
