@@ -71,6 +71,20 @@
           <div class="appointment_button_img"></div>
         </a>
       </div>
+      <form action="POST" name="contact_form" data-netlify="true" style="display: none;">
+                <!-- <label for="type"></label> -->
+                <select name="type "id="type">
+                    <option>Support</option>
+                    <option>Customer Service</option>
+                </select>
+                <input type="text" id="name" name="name" placeholder="Name"/>
+                <input name="contact" type="number" id="contact" placeholder="Contant"/>
+                <input name="email" type="email" id="email" placeholder="Email"/>
+                <input name="subject" type="text" id="subject"/>
+                <input name="message" type="text" id="message"/>
+                <div data-netlify-recaptcha="true"></div>
+                <button type="submit">send message</button>
+            </form>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
