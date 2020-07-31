@@ -11,6 +11,7 @@ import WorkPage from './components/pages/work'
 import ServicesPage from './components/pages/services'
 import AboutPage from './components/pages/about'
 import SonaxPage from './components/pages/sonax'
+import ContactPage from './components/pages/contact'
 
 ReactDOM.render(
 	<Router>
@@ -38,6 +39,11 @@ ReactDOM.render(
 			<Route path="/sonax">
 				<App>
 					<SonaxPage />
+				</App>
+			</Route>
+			<Route path="/contact">
+				<App>
+					<ContactPage />
 				</App>
 			</Route>
 		</Switch>
