@@ -1,0 +1,46 @@
+.product_page__content {
+    max-width: 900px;
+    width: 90vw;
+    margin: 50px auto;
+}
+
+.product_page__time_price_container {
+    border-top: 1px solid darkred;
+    padding-top: 25px;
+    margin-top: 50px;
+}
+
+thead {
+    background: darkred;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr {
+    text-transform: capitalize;
+}
+
+.product_page__price_disclaimer {
+    margin-top: 25px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+
+th {
+    padding: 15px;
+}
+
+p.product_page__list_title.special {
+    font-weight: bold;
+    color: darkred;
+}
+
+.product_page__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

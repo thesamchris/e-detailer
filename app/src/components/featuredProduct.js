@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './featuredProduct.css'
 const FeaturedProduct = () => (
 	<div className="featured__container">
@@ -14,9 +14,9 @@ const FeaturedProduct = () => (
 				Gentle “milk” that cleans and cares for smooth genuine leather,
 				artificial leather and perforated leather.
 			</p>
-			<Link className="featured__more" to="/featured">
+			{/* <Link className="featured__more" to="/featured">
 				{'learn more >'}
-			</Link>
+			</Link> */}
 		</div>
 		<div className="featured__red featured__bottom"></div>
 	</div>

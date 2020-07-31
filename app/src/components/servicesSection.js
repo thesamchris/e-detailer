@@ -13,17 +13,20 @@ const ServicesSection = () => (
 				<Card
 					title="WASH"
                     description="Car washing your car goes a long way toward maintaining that “new car” look and just making it more pleasant to drive."
-                    imgClass="services_wash_img"
+					imgClass="services_wash_img"
+					link="/wash"
 				/>
 				<Card
 					title="WAX"
                     description="Car wax is a product that protects and enhances a car's paint coating. Wax is best used after cleaning and polishing to make your car’s paintwork shine."
-                    imgClass="services_wax_img"
+					imgClass="services_wax_img"
+					link="/wax"
 				/>
 				<Card
 					title="POLISH"
                     description="Car polish is a product that helps to eliminate surface scratches, swirls, oxidation, dirt, and other minor imperfections."
-                    imgClass="services_polish_img"
+					imgClass="services_polish_img"
+					link="/polish"
 				/>
 			</div>
 			<div className="desktop_nav__link_container">
