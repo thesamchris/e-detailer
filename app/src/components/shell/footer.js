@@ -31,15 +31,15 @@ const Footer = () => (
 				</span>
 			</div>
 			<div className="footer__links_container">
-				<h3 className="footer__links_title">exclusive partners</h3>
+				<h3 className="footer__links_title">exclusive partner</h3>
 				<span className="desktop_nav__link_container">
 					<Link className="desktop_nav__link" to="/sonax">
 						sonax
 					</Link>
 				</span>
-				<span className="desktop_nav__link_container">
+				{/* <span className="desktop_nav__link_container">
 					<Link className="desktop_nav__link">max shine</Link>
-				</span>
+				</span> */}
 			</div>
 			<div className="footer__grow"></div>
 			<div className="footer__social_media_container">

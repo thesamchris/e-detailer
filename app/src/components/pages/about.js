@@ -58,7 +58,7 @@ const About = () => (
 					</ul>
 				</p>
 			</div>
-			<h1 className="about_us__partners">exclusive partners</h1>
+			<h1 className="about_us__partners">exclusive partner</h1>
 			<div className="about_us__list">
 				<div className="about_us__list_item">
 					<div className="about_us__list_item_title">
@@ -82,7 +82,7 @@ const About = () => (
 						specialist magazines “Autohaus” and “auto service praxis”.
 					</p>
 				</div>
-				<div className="about_us__list_item">
+				{/* <div className="about_us__list_item">
 					<div className="about_us__list_item_title">
 						<div className="about_us__maxshine_logo"></div>
 					</div>
@@ -103,7 +103,7 @@ const About = () => (
 						detailing tool and accessory brands in around 50 countries and
 						regions globally.`}
 					</p>
-				</div>
+				</div> */}
 			</div>
 			<div className="about_us__press_container">
 				<h1 className="about_us__partners">featured on the news</h1>
