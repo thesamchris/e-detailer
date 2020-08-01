@@ -24,16 +24,19 @@ const DesktopSlide = ({ active = false, index, img }) => (
 
 let sliderContent = {
 	0: {
-		title: 'interiors',
-		subtitle: 'beauty comes from the inside'
+		title: 'wash',
+		subtitle: 'beauty comes from the inside',
+		link: '/wash'
 	},
 	1: {
 		title: 'polish',
-		subtitle: 'look like new'
+		subtitle: 'look like new',
+		link: '/polish'
 	},
 	2: {
 		title: 'wax',
-		subtitle: 'clean.'
+		subtitle: 'clean.',
+		link: '/wax'
 	}
 }
 
@@ -100,7 +103,7 @@ const SliderText = ({ title = 'title', subtitle = 'subtitle', onNextClick, onPre
 					type="button"
 					className="on-dark btn-explore explore-models button-wrapper"
 					data-layer="showModels,Models Slider,Show"
-					to="/services"
+					to={ sliderContent[activeSlide].link }
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
