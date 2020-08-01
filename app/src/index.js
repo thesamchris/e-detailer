@@ -15,6 +15,7 @@ import ContactPage from './components/pages/contact'
 import WaxPage from './components/pages/products/wax'
 import PolishPage from './components/pages/products/polish'
 import WashPage from './components/pages/products/wash'
+import PromotionsPage from './components/pages/promotions'
 
 ReactDOM.render(
 	<Router>
@@ -62,6 +63,11 @@ ReactDOM.render(
 			<Route path="/wash">
 				<App>
 					<WashPage />
+				</App>
+			</Route>
+			<Route path="/promotions">
+				<App>
+					<PromotionsPage />
 				</App>
 			</Route>
 		</Switch>

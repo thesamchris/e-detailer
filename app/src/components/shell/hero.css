@@ -102,6 +102,12 @@
     background-position: top center;
 }
 
+.promotions_bg {
+    background: url(../../assets/ferrari_inside_sonax.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
 @media only screen and (max-width: 375px) {
   .hero__subtitle {
       font-size: 18px;
