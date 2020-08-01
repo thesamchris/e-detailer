@@ -14,8 +14,9 @@
 .partners__sonax {
     width: 200px;
     height: 100px;
-    background: url('https://cdn.worldvectorlogo.com/logos/sonax-1.svg');
-    background-size: contain;
+    background: url(../assets/sonax_logo.jpg);
+    background-size: cover;
+    background-position: 0;
     background-repeat: no-repeat;
     margin: 0 auto;
 } 
