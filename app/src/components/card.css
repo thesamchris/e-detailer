@@ -72,3 +72,21 @@ a.card__learn {
     background-size: cover;
     background-position: center;
 }
+
+.services_coating_img {
+    background: url(../assets/services_paint.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services_headlight_img {
+    background: url(../assets/services_headlight.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.services_interior_img {
+    background: url(../assets/services_interior.jpg);
+    background-size: cover;
+    background-position: center;
+}
