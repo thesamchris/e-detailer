@@ -37,18 +37,18 @@ class Nav extends React.Component {
 								</Link>
 							</span>
 							<span className="desktop_nav__link_container">
-								<Link className="desktop_nav__link" to="/about">
-									About Us
-								</Link>
-							</span>
-							<span className="desktop_nav__link_container">
-								<Link className="desktop_nav__link" to="/sonax">
-									Sonax
-								</Link>
-							</span>
-							<span className="desktop_nav__link_container">
 								<Link className="desktop_nav__link" to="/services">
 									services
+								</Link>
+							</span>
+							<span className="desktop_nav__link_container">
+								<Link className="desktop_nav__link" to="/products">
+									Products
+								</Link>
+							</span>
+							<span className="desktop_nav__link_container">
+								<Link className="desktop_nav__link" to="/about">
+									About Us
 								</Link>
 							</span>
 						</nav>

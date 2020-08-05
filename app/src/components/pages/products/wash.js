@@ -31,9 +31,9 @@ const WashPage = () => (
                         <li>SONAX Speed Wax (protection)</li>
                     </ul>
                     <div className="product_page__time">Duration: 30 minutes</div>
-                    <div className="product_page__price">
+                    {/* <div className="product_page__price">
                         <p className="product_page__price_starting">Our price is from $15</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="product_page__list">
                     <p className="product_page__list_title special">DELUXE WASH:</p>
@@ -48,9 +48,9 @@ const WashPage = () => (
                         <li>SONAX Brilliant Shine Detailer (protection)</li>
                     </ul>
                     <div className="product_page__time">Duration: 30 minutes</div>
-                    <div className="product_page__price">
+                    {/* <div className="product_page__price">
                         <p className="product_page__price_starting">Our price is from $25</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="product_page__list">
                     <p className="product_page__list_title special">PREMIUM WASH:</p>
@@ -66,9 +66,9 @@ const WashPage = () => (
                         <li>Interior plastic/ leather trim dressing</li>
                     </ul>
                     <div className="product_page__time">Duration: 45 minutes</div>
-                    <div className="product_page__price">
+                    {/* <div className="product_page__price">
                         <p className="product_page__price_starting">Our price is from $35</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="product_page__list">
                     <p className="product_page__list_title special">ELITE WASH:</p>
@@ -86,9 +86,9 @@ const WashPage = () => (
                         <li>{'Exterior dressing (plastic/trim)'}</li>
                     </ul>
                     <div className="product_page__time">Duration: 60 minutes</div>
-                    <div className="product_page__price">
+                    {/* <div className="product_page__price">
                         <p className="product_page__price_starting">Our price is from $45</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 			
@@ -141,10 +141,10 @@ const WashPage = () => (
 								</tr>
 							</tbody>
 						</table>
-						<div className="product_page__price_disclaimer">
+						{/* <div className="product_page__price_disclaimer">
 							Price may vary depending on vehicle’s paint condition (*exclude
 							overspray case)
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

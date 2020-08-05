@@ -73,9 +73,15 @@
 }
 
 .sonax__bg {
-    background: url(../../assets/sonax_header.webp);
+    background: url(../../assets/xtreme_banner.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: 0 -550px;
+}
+
+.sonax_more__bg {
+    background: url(../../assets/sonax_more.jpg);
+    background-size: cover;
+    background-position: 0 -550px;
 }
 
 .contact_us_bg {

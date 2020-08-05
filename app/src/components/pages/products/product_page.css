@@ -27,11 +27,13 @@ tr {
 td {
     padding: 15px;
     border-bottom: 1px solid grey;
+    text-align: center;
 }
 
 
 th {
     padding: 15px;
+    text-align: center;
 }
 
 p.product_page__list_title.special {

@@ -12,7 +12,15 @@ import FeaturedProduct from '../featuredProduct'
 
 const HomePage = () => (
 	<App>
-		<Hero title="Car Wash" subtitle="Head-turning shine guaranteed" video={video} background={thumb} secondaryTitle={'Featured Product'} showLink={false} showContent={false}/>
+		<Hero
+			title="Car Wash"
+			subtitle="Head-turning shine guaranteed"
+			video={video}
+			background={thumb}
+			secondaryTitle={'Featured Product'}
+			showLink={false}
+			showContent={false}
+		/>
 		<FeaturedProduct />
 		{/* <ServicesSection /> */}
 		<DesktopSlider />
@@ -21,7 +29,7 @@ const HomePage = () => (
 			subtitle="Let the cars speak"
 			title="Our work"
 			link="/work"
-			background="https://images.unsplash.com/photo-1587350855729-bab6beeac1ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+			background="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
 		/>
 		<Partners />
 	</App>

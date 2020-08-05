@@ -25,6 +25,10 @@ h3.footer__links_title {
     text-transform: uppercase;
 }
 
+.footer__links_container.footer__social_media_container {
+    flex-direction: row;
+}
+
 .footer__links_container span.desktop_nav__link_container {
     margin-bottom: 10px;
 }
@@ -35,6 +39,7 @@ h3.footer__links_title {
 
 .footer__row {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer__links {
@@ -44,7 +49,9 @@ h3.footer__links_title {
 .footer__address {
     color: white;
     line-height: 1.5em;
-    margin: 50px 0 0 45px;
+    margin: 50px 0;
+    width: 100%;
+    text-align: center;
 }
 
 .footer__social_media {

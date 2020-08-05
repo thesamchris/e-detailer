@@ -41,7 +41,7 @@ const ContactPage = () => (
 			</form>
 		</div>
 		<div className="contact_us__map">
-			<h1 className="contact_us__map_title">where to find us</h1>
+			<h1 className="contact_us__map_title">kiulap branch</h1>
 			<div className="contact_us__map_container">
 				<iframe
 					title="company_location"
@@ -53,6 +53,22 @@ const ContactPage = () => (
 					allowfullscreen=""
 					aria-hidden="false"
 					tabindex="0"
+				></iframe>
+			</div>
+		</div>
+		<div className="contact_us__map">
+			<h1 className="contact_us__map_title">lambak branch</h1>
+			<div className="contact_us__map_container">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15899.166119573532!2d114.9543286!3d4.9742841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74fc9dd43495c19c!2sEssof%20Enterprise%20(Sonax%20-%20Lambak%20Branch)!5e0!3m2!1sen!2ssg!4v1596589749344!5m2!1sen!2ssg"
+					width="600"
+					height="450"
+					frameborder="0"
+					style={{ border: '0' }}
+					allowfullscreen=""
+					aria-hidden="false"
+					tabindex="0"
+					title="lambak map"
 				></iframe>
 			</div>
 		</div>

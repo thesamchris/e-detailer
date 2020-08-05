@@ -1,6 +1,9 @@
 import React from 'react'
 import './desktopSlider.css'
 import { Link } from 'react-router-dom'
+// import washImg from '../assets/services_wash.jpg'
+import waxImg from '../assets/services_wax.jpg'
+// import polishImg from '../assets/services_polish.jpg'
 
 const DesktopSlide = ({ active = false, index, img }) => (
     <div className={active ? "slide active" : "slide"} data-index={index}>
@@ -25,18 +28,18 @@ const DesktopSlide = ({ active = false, index, img }) => (
 let sliderContent = {
 	0: {
 		title: 'wash',
-		subtitle: 'beauty comes from the inside',
-		link: '/wash'
+		subtitle: 'beauty inside and out',
+		link: '/services'
 	},
 	1: {
 		title: 'polish',
 		subtitle: 'look like new',
-		link: '/polish'
+		link: '/services'
 	},
 	2: {
 		title: 'wax',
-		subtitle: 'clean.',
-		link: '/wax'
+		subtitle: 'clean and fresh',
+		link: '/services'
 	}
 }
 
@@ -169,9 +172,9 @@ class DesktopSlider extends React.Component {
 		let { activeSlide, next, last } = this.state
 
 		let imgs = {
-			0: 'https://images.unsplash.com/photo-1526518604528-b927bd350668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-			1: 'https://images.unsplash.com/photo-1571348500628-1e9b6aa00dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-			2: 'https://images.unsplash.com/photo-1565689876404-edf59093ce9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'
+			0: 'https://images.unsplash.com/photo-1592365559088-225c15dc3f10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+			1: 'https://images.unsplash.com/photo-1527581849771-416a9d62308e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+			2: waxImg,
 		}
 
 		return (

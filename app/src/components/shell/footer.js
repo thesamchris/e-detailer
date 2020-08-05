@@ -5,7 +5,6 @@ import './footer.css'
 const Footer = () => (
 	<footer>
 		<div className="footer__row">
-			
 			<div className="footer__logo"></div>
 			<div className="footer__links_container">
 				<h3 className="footer__links_title">general</h3>
@@ -41,38 +40,41 @@ const Footer = () => (
 					<Link className="desktop_nav__link">max shine</Link>
 				</span> */}
 			</div>
-			<div className="footer__grow"></div>
-			<div className="footer__social_media_container">
-				<Link
+			{/* <div className="footer__grow"></div> */}
+			<div className="footer__links_container footer__social_media_container">
+				<a
 					className="footer__social_media"
-					to="https://www.instagram.com/sonaxbrunei/"
+					href="https://www.instagram.com/sonaxbrunei/"
 				>
 					<i className="fab fa-instagram"></i>
-				</Link>
-				<Link
+				</a>
+				<a
 					className="footer__social_media"
-					to="https://www.facebook.com/sonaxbwn/"
+					href="https://www.facebook.com/sonaxbwn/"
 				>
 					<i className="fab fa-facebook-f"></i>
-				</Link>
-				<Link
+				</a>
+				<a
 					className="footer__social_media"
-					to="https://www.facebook.com/sonaxbwn/"
+					href="https://www.twitter.com/sonaxbrunei/"
 				>
 					<i className="fab fa-twitter"></i>
-				</Link>
-				<Link
+				</a>
+				{/* <Link
 					className="footer__social_media"
 					to="https://www.facebook.com/sonaxbwn/"
 				>
 					<i className="fab fa-youtube"></i>
-				</Link>
+				</Link> */}
 			</div>
 		</div>
 		<div className="footer__row">
-			<div className="footer__address">
+			{/* <div className="footer__address">
 				Copyright Essof Detailer. Block D1 Shakirin Complex, Kiulap B.S.B <br />
 				Opening Hours: Monday - Saturday | 9am - 9pm Essof Ent. +6738844011
+			</div> */}
+			<div className="footer__address">
+				Copyright Essof Detailer. All rights reserved.
 			</div>
 		</div>
 		{/* 

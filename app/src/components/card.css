@@ -73,6 +73,18 @@ a.card__learn {
     background-position: center;
 }
 
+.press_four {
+    background: url(../assets/press_four.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.press_five {
+    background: url(../assets/press_five.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .services_coating_img {
     background: url(../assets/services_paint.jpg);
     background-size: cover;

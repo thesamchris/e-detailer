@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../shell/hero'
 import Card from '../card'
+import { Link } from 'react-router-dom'
 import './about.css'
 
 const About = () => (
@@ -61,9 +62,9 @@ const About = () => (
 			<h1 className="about_us__partners">exclusive partner</h1>
 			<div className="about_us__list">
 				<div className="about_us__list_item">
-					<div className="about_us__list_item_title">
+					<Link to="/sonax" className="about_us__list_item_title">
 						<div className="about_us__sonax_logo"></div>
-					</div>
+					</Link>
 					<p className="about_us__list_item_p">
 						The market leader in car care products in Germany, and one of the
 						leading manufacturers worldwide. The brand is represented in 100
@@ -72,9 +73,9 @@ const About = () => (
 						products, to satisfy the highest requirements, in Neuburg an der
 						Donau.
 						<p className="about_us__list_item_point">
-							SONAX BEST CAR CARE BRAND FOR THE 15TH TIME IN A ROW! SONAX
+							SONAX BEST CAR CARE BRAND FOR THE 15TH TIME IN A ROW! 
 						</p>
-						once again, received the Best Brand 2020 award for 1st place in the
+						Sonax once again, received the Best Brand 2020 award for 1st place in the
 						car care products category. This was the result of this year’s
 						readers’ choice of the magazine “auto motor und sport”. SONAX has
 						recorded further success in surveys conducted by “Auto Zeitung”
@@ -110,18 +111,28 @@ const About = () => (
 				<div className="about_us__cards_container">
 					<Card
 						title="Leading German car care products now available in Brunei"
-                        link="https://borneobulletin.com.bn/leading-german-car-care-products-now-available-brunei/"
-                        imgClass="press_one"
+						link="https://borneobulletin.com.bn/leading-german-car-care-products-now-available-brunei/"
+						imgClass="press_one"
 					/>
 					<Card
 						title="Leading German car care products at 5th BKS"
-                        link="https://borneobulletin.com.bn/leading-german-car-care-products-at-5th-bks/"
-                        imgClass="press_two"
+						link="https://borneobulletin.com.bn/leading-german-car-care-products-at-5th-bks/"
+						imgClass="press_two"
 					/>
 					<Card
 						title="Singapore ticket for winner"
-                        link="https://borneobulletin.com.bn/singapore-ticket-for-winner/"
-                        imgClass="press_three"
+						link="https://borneobulletin.com.bn/singapore-ticket-for-winner/"
+						imgClass="press_three"
+					/>
+					<Card
+						title="Ramadhan Deals 2020 winners receive prizes"
+						link="https://borneobulletin.com.bn/2020/06/ramadhan-deals-2020-winners-receive-prizes/"
+						imgClass="press_four"
+					/>
+					<Card
+						title="Essof Enterprise opens new SONAX Brunei branch"
+						link="https://borneobulletin.com.bn/2020/07/essof-enterprise-opens-new-sonax-brunei-branch/"
+						imgClass="press_five"
 					/>
 				</div>
 			</div>

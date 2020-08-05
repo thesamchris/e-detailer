@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../card'
 import './services.css'
 import Hero from '../shell/hero'
-import LeftImageSection from './leftImageSection'
+// import LeftImageSection from './leftImageSection'
 
 const ServicesPage = () => {
     const servicesItems = services.map(service => <Card title={service.title} description={service.description} link={service.link} imgClass={service.imgClass} />)
@@ -16,33 +16,33 @@ const ServicesPage = () => {
 					imgClass="services_bg"
 				/>
 				<div className="services__cards_container">{servicesItems}</div>
-				<div className="services__cta">
+				{/* <div className="services__cta">
 					<LeftImageSection
 						title="Book an appointment now"
 						p="if you need assistance please call +673 8844011"
 						imgClass="services_cta"
 					/>
-				</div>
+				</div> */}
 			</div>
 		)
 }
 
 const services = [
 	{
-		title: 'washing',
-		description: 'Car washing your car goes a long way toward maintaining that “new car” look and just making it more pleasant to drive.',
+		title: 'wash',
+		description: '',
 		link: '/wash',
 		imgClass: 'services_wash_img'
 	},
 	{
-		title: 'waxing',
-		description: `Car wax is a product that protects and enhances a car's paint coating. Wax is best used after cleaning and polishing to make your car’s paintwork shine.`,
+		title: 'wax',
+		description: ``,
 		link: '/wax',
 		imgClass: 'services_wax_img'
 	},
 	{
 		title: 'polish',
-		description: 'Car polish is a product that helps to eliminate surface scratches, swirls, oxidation, dirt, and other minor imperfections.',
+		description: '',
 		link: '/polish',
 		imgClass: 'services_polish_img'
 	},
