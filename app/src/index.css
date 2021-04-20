@@ -8,6 +8,14 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+@font-face {
+  font-family: 'Dosis';
+  src: url('./dosis/dosis-variablefont_wght-webfont.woff2') format('woff2'),
+        url('./dosis/dosis-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
