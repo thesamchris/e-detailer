@@ -13,17 +13,23 @@
     z-index: 99;
     opacity: 0;
     transition: opacity ease-in-out 250ms;
-    padding: 50px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .mobile__notice > h1 {
     text-align: center;
     margin-top: 10px;
+    max-width: 90vw;
 }
 
 @media only screen and (max-width: 650px) {
   .mobile__notice {
       opacity: 1;
       display: flex;
+  }
+
+  body {
+      overflow: hidden;
   }
 }
