@@ -40,11 +40,26 @@
 }
 
 .gloss_shampoo {
-    background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/03143000-sonax-glanzshampoo-1l/4732495-1-ger-DE/03143000-SONAX-GlanzShampoo-1l.png');
+    background: url('https://www.carpartsbuddy.sg/wp-content/uploads/2019/09/03143000-SONAX-GlanzShampoo-1l.png');
     background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
 }
+
+.xtreme_shampoo {
+    background: url('https://www.carpartsbuddy.sg/wp-content/uploads/2019/08/02483000-SONAX-XTREME-Rich-Foam-Shampoo.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.washwax_shampoo {
+    background: url('https://www.carpartsbuddy.sg/wp-content/uploads/2019/09/313341.png');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
 .rich_foam_shampoo {
     background: url('https://www.sonax.sg/var/storage/images/_aliases/4_3_480_padded_portrait/media/catalog/packshots/02483000-sonax-xtreme-rich-foam-shampoo/5299437-1-ger-DE/02483000-SONAX-XTREME-Rich-Foam-Shampoo.png');
     background-size: contain;

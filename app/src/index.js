@@ -17,11 +17,14 @@ import WaxPage from './components/pages/products/wax'
 import PolishPage from './components/pages/products/polish'
 import WashPage from './components/pages/products/wash'
 import PromotionsPage from './components/pages/promotions'
+import CategoryShampoo from './components/pages/products/categories/shampoo'
+import MobileWebsiteNotice from './components/mobileWebsiteNotice';
 
 ReactDOM.render(
 	<Router>
 		<Switch>
 			<Route exact path="/">
+				<MobileWebsiteNotice />
 				<HomePage />
 				{/* <LeftImageSection /> */}
 			</Route>
@@ -43,6 +46,9 @@ ReactDOM.render(
 			</Route>
 			<Route path="/products">
 				<App>
+					<Route path="/shampoo">
+						<CategoryShampoo />
+					</Route>
 					<SonaxPage />
 				</App>
 			</Route>
