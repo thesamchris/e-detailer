@@ -19,7 +19,6 @@ import WashPage from './components/pages/products/wash/wash'
 import PromotionsPage from './components/pages/promotions'
 import CategoryShampoo from './components/pages/products/categories/shampoo'
 import MobileWebsiteNotice from './components/mobileWebsiteNotice';
-import { GeneralWash } from './components/pages/products/wash/generalWash';
 
 ReactDOM.render(
 	<Router>
