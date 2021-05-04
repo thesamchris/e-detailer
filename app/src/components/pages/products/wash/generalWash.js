@@ -1,14 +1,9 @@
 import React from 'react'
-import Hero from '../../shell/hero'
-import './product_page.css'
-import Card from '../../card'
-import './wash.css'
+import Card from '../../../card'
 
-const WashPage = () => (
-	<div className="product_page__container">
-		<Hero showContent={false} imgClass="wash_bg" secondaryTitle="wash" />
-		<div className="product_page__content">
-			{/* <h3 className="product_page__section_title">
+export const GeneralWash = () => (
+    <div>
+        {/* <h3 className="product_page__section_title">
 				SONAX PREMIUM CLASS CARNAUBACARE
 			</h3> */}
 			<p className="product_page__p">
@@ -100,8 +95,5 @@ const WashPage = () => (
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+    </div>
 )
-
-export default WashPage
