@@ -1,6 +1,8 @@
 import React from 'react'
 import Hero from '../../shell/hero'
 import './product_page.css'
+import Card from '../../card'
+import './wash.css'
 
 const WashPage = () => (
 	<div className="product_page__container">
@@ -18,77 +20,27 @@ const WashPage = () => (
 				than an at home scrub.
 			</p>
             <div className="product_page__flex">
-                <div className="product_page__list">
-                    <p className="product_page__list_title special">STANDARD WASH:</p>
-                    <ul className="product_page__list_ul">
-                        <li>SONAX Gloss Shampoo</li>
-                        <li>Exterior Wash</li>
-                        <li>{'Wheels, wheel wells & tires'}</li>
-                        <li>Air blown excess water</li>
-                        <li>{'Vacuum & interior cleaning'}</li>
-                        <li>{'Interior cleaning & dressing'}</li>
-                        <li>Tire dressing</li>
-                        <li>SONAX Speed Wax (protection)</li>
-                    </ul>
-                    <div className="product_page__time">Duration: 30 minutes</div>
-                    {/* <div className="product_page__price">
-                        <p className="product_page__price_starting">Our price is from $15</p>
-                    </div> */}
-                </div>
-                <div className="product_page__list">
-                    <p className="product_page__list_title special">DELUXE WASH:</p>
-                    <ul className="product_page__list_ul">
-                        <li>SONAX Gloss Shampoo</li>
-                        <li>Exterior Wash</li>
-                        <li>{'Wheels, wheel wells & tires'}</li>
-                        <li>Air blown excess water</li>
-                        <li>{'Vacuum & interior cleaning'}</li>
-                        <li>{'Interior cleaning & dressing'}</li>
-                        <li>Tire dressing</li>
-                        <li>SONAX Brilliant Shine Detailer (protection)</li>
-                    </ul>
-                    <div className="product_page__time">Duration: 30 minutes</div>
-                    {/* <div className="product_page__price">
-                        <p className="product_page__price_starting">Our price is from $25</p>
-                    </div> */}
-                </div>
-                <div className="product_page__list">
-                    <p className="product_page__list_title special">PREMIUM WASH:</p>
-                    <ul className="product_page__list_ul">
-                        <li>SONAX Gloss Shampoo</li>
-                        <li>Exterior Wash</li>
-                        <li>{'Wheels, wheel wells & tires'}</li>
-                        <li>Air blown excess water</li>
-                        <li>{'Vacuum & interior cleaning'}</li>
-                        <li>{'Interior cleaning & dressing'}</li>
-                        <li>Tire dressing</li>
-                        <li>SONAX Brilliant Shine Detailer (protection)</li>
-                        <li>Interior plastic/ leather trim dressing</li>
-                    </ul>
-                    <div className="product_page__time">Duration: 45 minutes</div>
-                    {/* <div className="product_page__price">
-                        <p className="product_page__price_starting">Our price is from $35</p>
-                    </div> */}
-                </div>
-                <div className="product_page__list">
-                    <p className="product_page__list_title special">ELITE WASH:</p>
-                    <ul className="product_page__list_ul">
-                        <li>SONAX Gloss Shampoo</li>
-                        <li>Exterior Wash</li>
-                        <li>{'Wheels, wheel wells & tires'}</li>
-                        <li>Air blown excess water</li>
-                        <li>{'Vacuum & interior cleaning'}</li>
-                        <li>{'Interior cleaning & dressing'}</li>
-                        <li>Tire dressing</li>
-                        <li>SONAX Brilliant Shine Detailer (protection)</li>
-                        <li>{'Brushing door jambs & edges'}</li>
-                        <li>{'Interior dressing (plastic/ leather trim)'}</li>
-                        <li>{'Exterior dressing (plastic/trim)'}</li>
-                    </ul>
-                    <div className="product_page__time">Duration: 60 minutes</div>
-                    {/* <div className="product_page__price">
-                        <p className="product_page__price_starting">Our price is from $45</p>
-                    </div> */}
+                <div className="wash_page__types_container">
+                    <Card
+						title="Standard Wash"
+						link="/wash/standard"
+						imgClass="red"
+					/>
+                    <Card
+						title="Deluxe Wash"
+						link="/wash/deluxe"
+						imgClass="red"
+					/>
+                    <Card
+						title="Premium Wash"
+						link="/wash/premium"
+						imgClass="red"
+					/>
+                    <Card
+						title="Elite Wash"
+						link="/wash/elite"
+						imgClass="red"
+					/>
                 </div>
             </div>
 			
