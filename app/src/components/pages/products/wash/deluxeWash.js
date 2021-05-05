@@ -1,5 +1,5 @@
 import React from 'react'
-import WashTemplate from './washTemplate'
+import WashTemplate from '../../serviceTemplate'
 import washDetails from '../../../../data/washDetails'
 
 const DeluxeWash = () => (

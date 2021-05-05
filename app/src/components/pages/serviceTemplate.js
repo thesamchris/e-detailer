@@ -1,8 +1,8 @@
 import React from 'react'
-import './wash.css'
+import './products/wash/wash.css'
 
-const WashTemplate = ({ title, data }) => {
-    let { exteriorItems, interiorItems, S, L, XL, duration } = data
+const ServiceTemplate = ({ title, data }) => {
+    let { exteriorItems, interiorItems, S, M, L, XL, duration, intro, introText } = data
     let exteriorListItems = exteriorItems.map((item, key) => (
         <li key={key}>
             <span className="fa-li">
@@ -25,6 +25,16 @@ const WashTemplate = ({ title, data }) => {
         <div>
             <h1 className="wash_title">{ title }</h1>
         </div>
+        { intro ? (
+            <div>
+                <h3 className="product_page__section_title">
+                    { intro }
+                </h3>
+                <p className="product_page__p">
+                    { introText }
+                </p>
+            </div>
+        ) : ''}
         <div className="wash__lists_container">
             <div className="tick_lists">
                 <p className="tick_lists__title">Exterior:</p>
@@ -43,9 +53,16 @@ const WashTemplate = ({ title, data }) => {
         <div className="wash_pricing__options_container">
             <div className="wash_pricing__option">
                 <div className="wash_pricing__image"></div>
-                <p className="wash_pricing__size">S/M</p>
+                <p className="wash_pricing__size">{S && M ? 'S': 'S/M'}</p>
                 <p className="wash_pricing__price">{ S }</p>
             </div>
+            {M ?  (
+                <div className="wash_pricing__option">
+                    <div className="wash_pricing__image"></div>
+                    <p className="wash_pricing__size">M</p>
+                    <p className="wash_pricing__price">{ M }</p>
+                </div>
+            ): ''}
             <div className="wash_pricing__option">
                 <div className="wash_pricing__image"></div>
                 <p className="wash_pricing__size">L</p>
@@ -62,4 +79,4 @@ const WashTemplate = ({ title, data }) => {
     </div>
 )}
 
-export default WashTemplate
+export default ServiceTemplate
