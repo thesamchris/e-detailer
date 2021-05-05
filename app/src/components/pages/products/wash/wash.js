@@ -5,6 +5,9 @@ import { Switch, Route } from 'react-router-dom'
 import '../product_page.css'
 import './wash.css'
 import StandardWash from './standardWash'
+import DeluxeWash from './deluxeWash'
+import PremiumWash from './premiumWash'
+import EliteWash from './eliteWash'
 
 const WashPage = ({ children, match }) => (
 	<div className="product_page__container">
@@ -16,6 +19,15 @@ const WashPage = ({ children, match }) => (
 				</Route>
 				<Route path="/wash/standard">
 					<StandardWash />
+				</Route>
+				<Route path="/wash/deluxe">
+					<DeluxeWash />
+				</Route>
+				<Route path="/wash/premium">
+					<PremiumWash />
+				</Route>
+				<Route path="/wash/elite">
+					<EliteWash />
 				</Route>
 				<Route>
 					<GeneralWash />

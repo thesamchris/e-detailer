@@ -1,53 +1,65 @@
 import React from 'react'
+import './wash.css'
 
-const WashTemplate = ({ pricing, exteriorItems, interiorItems }) => (
+const WashTemplate = ({ title, data }) => {
+    let { exteriorItems, interiorItems, S, L, XL, duration } = data
+    let exteriorListItems = exteriorItems.map((item, key) => (
+        <li key={key}>
+            <span className="fa-li">
+                <i className="fas fa-check"></i>
+            </span>
+            { item }
+        </li>
+    ))
+    let interiorListItems = interiorItems.map((item, key) => (
+        <li key={key}>
+            <span className="fa-li">
+                <i className="fas fa-check"></i>
+            </span>
+            { item }
+        </li>
+    ))
+
+    return (
     <div>
         <div>
-            <h1 className="wash_title">Standard Wash</h1>
+            <h1 className="wash_title">{ title }</h1>
         </div>
         <div className="wash__lists_container">
             <div className="tick_lists">
                 <p className="tick_lists__title">Exterior:</p>
                 <ul className="fa-ul">
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Exterior Wash with SONAX Foam Energy Shampoo</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Wheels, wheel wells & tires cleaning</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Drying with microfiber towel</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Air blown excess water</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Glass Clean with SONAX Glass Cleaner</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Tires dressing with SONAX Profiline Tire Gloss</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>SONAX High Speed Wax for paint protection</li>
+                    { exteriorListItems }
                 </ul>
             </div>
             <div className="tick_lists">
                 <p className="tick_lists__title">Interior:</p>
                 <ul className="fa-ul">
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Vacuum</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Interior Wipe</li>
-                    <li><span className="fa-li"><i className="fas fa-check"></i></span>Glass Clean with SONAX Glass Cleaner</li>
+                    { interiorListItems }
                 </ul>
             </div>
         </div>
-        <div className="wash_duration">Duration: 30 minutes</div>
+        <div className="wash_duration">Duration: { duration }</div>
         <div className="wash_pricing__options_container">
             <div className="wash_pricing__option">
                 <div className="wash_pricing__image"></div>
                 <p className="wash_pricing__size">S/M</p>
-                <p className="wash_pricing__price">{pricing.S}</p>
+                <p className="wash_pricing__price">{ S }</p>
             </div>
             <div className="wash_pricing__option">
                 <div className="wash_pricing__image"></div>
                 <p className="wash_pricing__size">L</p>
-                <p className="wash_pricing__price">{pricing.L}</p>
+                <p className="wash_pricing__price">{ L }</p>
             </div>
             <div className="wash_pricing__option">
                 <div className="wash_pricing__image"></div>
                 <p className="wash_pricing__size">X/L</p>
-                <p className="wash_pricing__price">{pricing.XL}</p>
+                <p className="wash_pricing__price">{ XL }</p>
             </div>
         </div>
         <hr />
         <div className="wash_vehicle__reference"></div>
     </div>
-)
+)}
 
 export default WashTemplate
